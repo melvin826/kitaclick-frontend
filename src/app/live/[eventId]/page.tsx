@@ -1,3 +1,12 @@
+// Fix static export for live events
+export async function generateStaticParams() {
+  return [
+    { eventId: "launch-demo" },
+    { eventId: "training-101" },
+    { eventId: "exclusive-live" }
+  ];
+}
+
 import { liveEvents } from '@/data/mockLive'
 import { notFound } from 'next/navigation'
 export default function LiveEvent({params}:{params:{eventId:string}}){

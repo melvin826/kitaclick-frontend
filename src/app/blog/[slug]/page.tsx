@@ -1,3 +1,13 @@
+// Add static params for export mode
+export async function generateStaticParams() {
+  // Provide demo slugs for your blog posts
+  return [
+    { slug: "welcome-to-kitaclick" },
+    { slug: "how-to-earn-online" },
+    { slug: "dropshipping-success-stories" }
+  ];
+}
+
 import { posts } from '@/data/mockBlog'
 import { notFound } from 'next/navigation'
 export default function Post({params}:{params:{slug:string}}){

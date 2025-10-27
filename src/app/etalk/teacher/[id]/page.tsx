@@ -1,3 +1,12 @@
+// Fix static export: define demo params for teacher pages
+export async function generateStaticParams() {
+  return [
+    { id: "1" },
+    { id: "2" },
+    { id: "3" }
+  ];
+}
+
 import { teachers } from '@/data/mockTeachers'
 import { notFound } from 'next/navigation'
 export default function Teacher({params}:{params:{id:string}}){

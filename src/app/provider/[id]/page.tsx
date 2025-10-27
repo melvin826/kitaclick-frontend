@@ -1,3 +1,12 @@
+// Fix static export for provider pages
+export async function generateStaticParams() {
+  return [
+    { id: "provider-1" },
+    { id: "provider-2" },
+    { id: "provider-3" }
+  ];
+}
+
 import { providers } from '@/data/mockProviders'
 import { notFound } from 'next/navigation'
 export default function Provider({params}:{params:{id:string}}){

@@ -1,8 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export', // required for static build
-  images: { unoptimized: true },
-  reactStrictMode: true
+  output: 'export', // ✅ replaces "next export"
+  images: {
+    unoptimized: true, // ✅ needed for static export
+  },
+  experimental: {
+    missingGenerateStaticParams: false, // ✅ prevents missing param errors
+  },
 };
 
 module.exports = nextConfig;

@@ -1,3 +1,12 @@
+// Fix static export for product pages
+export async function generateStaticParams() {
+  return [
+    { sku: "sample-product-1" },
+    { sku: "sample-product-2" },
+    { sku: "sample-product-3" }
+  ];
+}
+
 import { products } from '@/data/mockProducts'
 import { notFound } from 'next/navigation'
 export default function ProductPage({params}:{params:{sku:string}}){
