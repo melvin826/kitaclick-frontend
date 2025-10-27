@@ -1,0 +1,1 @@
+export default function PadalaX(){return <div><h1 className='text-2xl font-bold'>PadalaX</h1></div>}

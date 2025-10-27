@@ -1,0 +1,1 @@
+export default function AdminContent(){return <div><h1 className='text-2xl font-bold'>CMS</h1></div>}

@@ -1,0 +1,3 @@
+'use client'
+import Link from 'next/link'
+export default function Navbar(){ return (<header className='bg-white shadow'><div className='container mx-auto px-4 py-3 flex items-center justify-between'><Link href='/' className='flex items-center gap-3'><img src='/images/logo.png' alt='KitaClick' className='w-10 h-10' /><div className='font-bold text-lg text-primary'>KitaClick</div></Link><nav className='hidden md:flex gap-6'><Link href='/ecosystem'>Ecosystem</Link><Link href='/academy'>Academy</Link><Link href='/catalog'>Catalog</Link><Link href='/live'>Live</Link><Link href='/opportunities' className='px-3 py-2 bg-primary text-white rounded'>Join</Link></nav></div></header>) }

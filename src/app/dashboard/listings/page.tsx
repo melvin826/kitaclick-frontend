@@ -1,0 +1,1 @@
+export default function Listings(){return <div><h1 className='text-2xl font-bold'>Listings</h1></div>}

@@ -1,0 +1,1 @@
+export default function Verify(){return <div><h1 className='text-2xl font-bold'>Verify (KYC)</h1></div>}

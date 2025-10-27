@@ -1,0 +1,1 @@
+export default function Payouts(){return <div><h1 className='text-2xl font-bold'>Payouts</h1></div>}

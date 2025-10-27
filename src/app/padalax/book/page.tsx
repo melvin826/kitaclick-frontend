@@ -1,0 +1,1 @@
+export default function PadalaBook(){return <div><h1 className='text-2xl font-bold'>PadalaX Booking</h1></div>}
